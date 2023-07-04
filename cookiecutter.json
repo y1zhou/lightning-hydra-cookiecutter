@@ -1,0 +1,19 @@
+{
+    "project_name": "project_name",
+    "author_name": "Your name (or your organization/team)",
+    "repo_name": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+    "remote_repo": "http://git.biomap-int.com:8100/{{ cookiecutter.author_name }}/{{ cookiecutter.repo_name }}.git",
+    "description": "A short description of the project.",
+    "open_source_license": [
+        "MIT",
+        "BSD-3-Clause",
+        "Apache License 2.0",
+        "No license file"
+    ],
+    "python_version": [
+        "3.8",
+        "3.9",
+        "3.10",
+        "3.11"
+    ]
+}
