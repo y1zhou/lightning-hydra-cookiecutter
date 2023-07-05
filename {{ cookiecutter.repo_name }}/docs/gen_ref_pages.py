@@ -5,7 +5,7 @@ from pathlib import Path
 import mkdocs_gen_files
 
 nav = mkdocs_gen_files.Nav()
-src_dir = "metabolike"
+src_dir = "src"
 for path in sorted(Path(src_dir).glob("**/*.py")):
     module_path = path.relative_to(src_dir).with_suffix("")
     doc_path = path.relative_to(src_dir).with_suffix(".md")
