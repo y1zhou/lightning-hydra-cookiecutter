@@ -30,8 +30,8 @@ conda activate {{ cookiecutter.repo_name }}
 # install pytorch according to instructions
 # https://pytorch.org/get-started/
 
-# install requirements
-pip install -r requirements.txt
+# install requirements and the package in editable mode
+pip install -e .
 ```
 
 #### Conda
