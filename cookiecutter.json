@@ -2,7 +2,7 @@
     "project_name": "project_name",
     "author_name": "Your name (or your organization/team)",
     "repo_name": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
-    "remote_repo": "http://git.biomap-int.com:8100/{{ cookiecutter.author_name }}/{{ cookiecutter.repo_name }}.git",
+    "repo_url": "http://git.biomap-int.com:8100/{{ cookiecutter.author_name }}/{{ cookiecutter.repo_name }}.git",
     "description": "A short description of the project.",
     "open_source_license": [
         "MIT",

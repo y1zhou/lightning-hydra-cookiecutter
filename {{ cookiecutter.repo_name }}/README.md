@@ -20,7 +20,7 @@
 
 ```bash
 # clone project
-git clone {{ cookiecutter.remote_repo }}
+git clone {{ cookiecutter.repo_url }}
 cd {{ cookiecutter.repo_name }}
 
 # [OPTIONAL] create conda environment
@@ -38,7 +38,7 @@ pip install -r requirements.txt
 
 ```bash
 # clone project
-git clone {{ cookiecutter.remote_repo }}
+git clone {{ cookiecutter.repo_url }}
 cd {{ cookiecutter.repo_name }}
 
 # create conda environment and install dependencies
@@ -70,4 +70,29 @@ You can override any parameter from command line like this
 
 ```bash
 python src/train.py trainer.max_epochs=20 data.batch_size=64
+```
+
+## Contributing
+
+### Documentation
+
+By default, the project uses [MkDocs](https://www.mkdocs.org/) for all documentation.
+Use `mkdocs serve` to view the docs, or `mkdocs build` to build static HTML files.
+The project also initializes [mkdocstrings](https://mkdocstrings.github.io/), which enables automatic documentation from sources.
+
+### Code
+
+This project uses [pre-commit](https://pre-commit.com/) for identifying simple issues in the code before it is pushed to the remote repository.
+Install `pre-commit` and the git hook scripts with:
+
+```bash
+pip install pre-commit
+pre-commit install
+```
+
+Now all the hooks defined in [the pre-commit config](.pre-commit-config.yaml) will be run automatically before commiting.
+You can also manually run them on all files:
+
+```bash
+pre-commit run --all-files
 ```
