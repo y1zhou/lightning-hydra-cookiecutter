@@ -13,17 +13,17 @@ dependencies = [
   # --------- pytorch --------- #
   "torch>=2.0.0",
   "torchvision>=0.15.0",
-  "lightning>=2.0.0",
-  "torchmetrics>=0.11.4",
+  # "lightning>=2.0.0",
+  # "torchmetrics>=0.11.4",
 
   # --------- hydra --------- #
   "hydra-core==1.3.2",
   "hydra-colorlog==1.2.0",
-  "hydra-optuna-sweeper==1.2.0",
+  # "hydra-optuna-sweeper==1.2.0",
 
   # --------- loggers --------- #
-  "wandb",
-  "mlflow",
+  # "wandb",
+  # "mlflow",
 
   # --------- others --------- #
   "pyrootutils", # standardizing the project root setup
@@ -54,7 +54,7 @@ doc = [
   "mkdocs-gen-files",
   "mkdocs-literate-nav",
 ]
-dev = ["black>=22.3.0", "pre-commit"]
+dev = ["pre-commit"]
 
 [tool.pytest.ini_options]
 addopts = [

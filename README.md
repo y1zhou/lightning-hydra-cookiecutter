@@ -90,9 +90,7 @@ The directory structure of new project looks like this:
 ├── .project-root             <- File for inferring the position of project root directory
 ├── environment.yaml          <- File for installing conda environment
 ├── Makefile                  <- Makefile with commands like `make train` or `make test`
-├── pyproject.toml            <- Configuration options for testing and linting
-├── requirements.txt          <- File for installing python dependencies
-├── setup.py                  <- File for installing project as a package
+├── pyproject.toml            <- Configuration options for package information, testing, and linting
 └── README.md
 ```
 
