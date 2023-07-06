@@ -9,6 +9,7 @@ name: "{{ cookiecutter.repo_name }}"
 
 channels:
   - pytorch
+  - nvidia
   - conda-forge
   - defaults
 
@@ -23,8 +24,10 @@ channels:
 dependencies:
   - python={{ cookiecutter.python_version }}
   - pytorch=2.*
+  - pytorch-cuda=11.8
   - torchvision=0.*
-  # - lightning=2.*
+  # We use Lightning Fabric by default
+  - lightning=2.*
   # - torchmetrics=0.*
   - hydra-core=1.*
   - rich=13.*
